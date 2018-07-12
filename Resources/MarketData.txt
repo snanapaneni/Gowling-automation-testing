@@ -1,0 +1,19 @@
+#CountryName , multiple language (Yes/No) , Login (Y/N), Cart(Y/N)
+Europe,yes,yes,yes
+Canada,no,yes,yes
+United Kingdom,no,yes,yes
+Australia,no,no,no
+Austria,no,no,no
+Belgium,no,yes,yes
+Denmark,no,no,no
+France,yes,no,no
+Germany,yes,no,no
+Italy,no,no,no
+Japan,yes,no,no
+Mexico,yes,no,no
+Netherlands,no,no,no
+New Zealand,no,no,no
+Spain,no,no,no
+Sweden,no,no,no
+Switzerland,yes,yes,yes
+International (USA),no,yes,yes

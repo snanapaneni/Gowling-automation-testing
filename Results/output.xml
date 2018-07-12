@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171201 11:21:06.223" generator="Robot 3.0.3.dev20170213 (Python 2.7.10 on darwin)">
+<suite source="/Users/arunbharath/Ecentricarts/automation/Tests/LoginTests.robot" id="s1" name="LoginTests">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://startech:St@rT3ch!@startech-qa.ecentricarts.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171201 11:21:06.339" level="INFO">Opening browser 'chrome' to base url 'http://startech:St@rT3ch!@startech-qa.ecentricarts.com/'</msg>
+<status status="PASS" endtime="20171201 11:21:11.769" starttime="20171201 11:21:06.339"></status>
+</kw>
+<test id="s1-t1" name="SiteLogin login with valid credentials">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20171201 11:21:12.903" starttime="20171201 11:21:11.771"></status>
+</kw>
+<kw name="Navigate to login page from landing page" library="SiteLoginKeyword">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20171201 11:21:12.941" starttime="20171201 11:21:12.905"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button</arg>
+</arguments>
+<msg timestamp="20171201 11:21:12.942" level="INFO">Clicking element '//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button'.</msg>
+<status status="PASS" endtime="20171201 11:21:12.994" starttime="20171201 11:21:12.941"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl00_HeaderUtilityTools_lnkLogIn']</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20171201 11:21:13.026" starttime="20171201 11:21:12.994"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl00_HeaderUtilityTools_lnkLogIn']</arg>
+</arguments>
+<msg timestamp="20171201 11:21:13.027" level="INFO">Clicking element '//*[@id='p_lt_ctl00_HeaderUtilityTools_lnkLogIn']'.</msg>
+<status status="PASS" endtime="20171201 11:21:13.897" starttime="20171201 11:21:13.027"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_UserName']</arg>
+</arguments>
+<msg timestamp="20171201 11:21:13.918" level="INFO">Current page contains element '//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_UserName']'.</msg>
+<status status="PASS" endtime="20171201 11:21:13.918" starttime="20171201 11:21:13.898"></status>
+</kw>
+<status status="PASS" endtime="20171201 11:21:13.918" starttime="20171201 11:21:12.904"></status>
+</kw>
+<kw name="Login with valid credentials" library="SiteLoginKeyword">
+<arguments>
+<arg>auto-test-user</arg>
+<arg>qwe123!@#</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_UserName']</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20171201 11:21:13.945" starttime="20171201 11:21:13.919"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_UserName']</arg>
+<arg>${userName}</arg>
+</arguments>
+<msg timestamp="20171201 11:21:13.946" level="INFO">Typing text 'auto-test-user' into text field '//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_UserName']'</msg>
+<status status="PASS" endtime="20171201 11:21:14.083" starttime="20171201 11:21:13.945"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_Password']</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20171201 11:21:14.083" level="INFO">Typing text 'qwe123!@#' into text field '//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_Password']'</msg>
+<status status="PASS" endtime="20171201 11:21:14.178" starttime="20171201 11:21:14.083"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_LoginButton']</arg>
+</arguments>
+<msg timestamp="20171201 11:21:14.178" level="INFO">Clicking element '//*[@id='p_lt_ctl04_pageplaceholder_p_lt_ctl00_stLF_Login1_LoginButton']'.</msg>
+<status status="PASS" endtime="20171201 11:21:16.248" starttime="20171201 11:21:14.178"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button//span</arg>
+</arguments>
+<assign>
+<var>${actualUserFirstName}</var>
+</assign>
+<msg timestamp="20171201 11:21:16.296" level="INFO">${actualUserFirstName} = Joe Automation</msg>
+<status status="PASS" endtime="20171201 11:21:16.296" starttime="20171201 11:21:16.248"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${expectedUserFirstName}</arg>
+<arg>${actualUserFirstName}</arg>
+</arguments>
+<status status="PASS" endtime="20171201 11:21:16.296" starttime="20171201 11:21:16.296"></status>
+</kw>
+<status status="PASS" endtime="20171201 11:21:16.297" starttime="20171201 11:21:13.918"></status>
+</kw>
+<kw name="LogOut the logged-in user" library="SiteLoginKeyword">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20171201 11:21:16.327" starttime="20171201 11:21:16.297"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button</arg>
+</arguments>
+<msg timestamp="20171201 11:21:16.327" level="INFO">Clicking element '//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button'.</msg>
+<status status="PASS" endtime="20171201 11:21:16.392" starttime="20171201 11:21:16.327"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='p_lt_ctl00_HeaderUtilityTools_lnkSignOut_btnSignOutLink']</arg>
+</arguments>
+<msg timestamp="20171201 11:21:16.392" level="INFO">Clicking element '//*[@id='p_lt_ctl00_HeaderUtilityTools_lnkSignOut_btnSignOutLink']'.</msg>
+<status status="PASS" endtime="20171201 11:21:16.771" starttime="20171201 11:21:16.392"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button//span</arg>
+<arg>40</arg>
+</arguments>
+<status status="PASS" endtime="20171201 11:21:16.797" starttime="20171201 11:21:16.772"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id='form']/div[4]/header/div[1]/div/div[2]/ul/li[1]/button//span</arg>
+</arguments>
+<assign>
+<var>${actualLoggedOutName}</var>
+</assign>
+<msg timestamp="20171201 11:21:16.821" level="INFO">${actualLoggedOutName} = Log In</msg>
+<status status="PASS" endtime="20171201 11:21:16.821" starttime="20171201 11:21:16.797"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${expectedLoggedOutName}</arg>
+<arg>${actualLoggedOutName}</arg>
+</arguments>
+<status status="PASS" endtime="20171201 11:21:16.822" starttime="20171201 11:21:16.821"></status>
+</kw>
+<status status="PASS" endtime="20171201 11:21:16.822" starttime="20171201 11:21:16.297"></status>
+</kw>
+<doc>Successfull login with automation username and password</doc>
+<tags>
+<tag>Critical</tag>
+</tags>
+<status status="PASS" endtime="20171201 11:21:16.822" critical="yes" starttime="20171201 11:21:11.769"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171201 11:21:18.995" starttime="20171201 11:21:16.823"></status>
+</kw>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20171201 11:21:18.995" starttime="20171201 11:21:06.226"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Critical</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="LoginTests" pass="1">LoginTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
